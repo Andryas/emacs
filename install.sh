@@ -10,7 +10,7 @@ echo "Installing EMACS pkgs"
 emacs26 --script install-packages.el
 
 ## To formmat sql queries
-sudo gem install anbt-sql-formatter -y
+sudo gem install anbt-sql-formatter
 
 mv dotemacs ~/.emacs
 mkdir ~/.emacs.d

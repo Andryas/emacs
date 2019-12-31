@@ -2,10 +2,18 @@
 ;;   emacs --script install-packages.el
 
 (require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
 (package-list-packages)
+
+;; (package-initialize)
+;; 
+;; (unless package-archive-contents
+;;   (package-refresh-contents))
+;; 
+;; (dolist (package package-list)
+;;   (unless (package-installed-p package)
+;;     (package-install package)))
 
 ;; Runs the installation of each package.
 (package-install 'solarized-theme)
